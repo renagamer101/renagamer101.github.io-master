@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/home.css">
+
+        <script src="js/theme.js"></script>
+        <script src="js/home.js"></script>
+        <script src="api/bare.js"></script>
+        <script src="tabcloaker.js"></script>
+    </head>
+
+    <body>
+        <script src="uv/uv.bundle.js"></script>
+        <script src="uv/uv.config.js"></script>
+        <script src="js/proxy.js"></script>
+        <script src="tabcloaker.js"></script>
+         
+        <div class="title">
+            <p>Rena Network</p>
+            <h1 id= "randomTitle" data-theme="default">
+              </h1>
+        </div>
+    </body>
+</html>
+<script>
+    let possibleTitles = [
+    "RenaNetwork on tOp BaBy",
+    "Bottom text.",
+    "shut up",
+    "oh that's ur juilet? that's cool ima Romeo her",
+    "dont let ya teacher catch you lacking",
+    "hey you yeah you all the cool kids be using renanetwork",
+    "become a cool kid and play rnv4 now",
+    "legends say rena is a girl"
+];
+
+let randomTitle = possibleTitles[Math.floor(Math.random() * possibleTitles.length)];
+
+document.getElementById("randomTitle").innerHTML = randomTitle;
+  </script>
